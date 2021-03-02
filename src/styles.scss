@@ -1,0 +1,13 @@
+ul {
+  list-style-type: none;
+  &#games-list li {
+    display: inline-block;
+  }
+}
+
+.game-name {
+  color: darkorange;
+  &:hover{
+    color: orange;
+  }
+}
