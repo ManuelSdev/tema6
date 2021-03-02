@@ -12,4 +12,17 @@ ul#games-list li {
   color: orange;
 }
 
+.game-snippet {
+  max-width: 220px;
+}
+.game-snippet .game-snippet-container, .game-snippet .game-name {
+  text-align: center;
+}
+.game-snippet .game-name {
+  max-width: 220px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=styles.css.map */
