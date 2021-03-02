@@ -1,6 +1,8 @@
 import {getGames,getGameById,getCommentsOfGame} from './api-handler.js';
 import {generateCommentSnippet, generateGameSnippet} from './functions.js';
 
+
+
 export async function drawListGames() {
     let games = await getGames();
     const newDiv = document.createElement('div');
