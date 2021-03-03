@@ -33,12 +33,12 @@
     {
       "id": 1,
       "name": "Winnie McDowell",
-      "image": "https://api.adorable.io/avatars/50/abott@adorable.png"
+      "image": "https://randomuser.me/api/portraits/thumb/women/75.jpg"
     },
     {
       "id": 2,
       "name": "Donnie Prest",
-      "image": "https://api.adorable.io/avatars/50/aso3@adorable.png"
+      "image": "https://randomuser.me/api/portraits/thumb/women/88.jpg"
     }
   ],
   "games": [
@@ -57,7 +57,7 @@
     {
       "id": 2,
       "name": "Ori and the Will of the Wisps",
-      "image": "https://static.metacritic.com/images/products/games/4/63aa7e131436275bb238d9a02590a6a5-98.jpg",
+      "image": "https://store-images.s-microsoft.com/image/apps.18799.14047496556148589.9fda5cef-7995-4dbb-a626-66d2ab3feb4f.1e167626-8b7d-47b4-9fe5-d06a43ac6677",
       "scores": {
         "metacritic": 94,
         "userScore": 9.1
