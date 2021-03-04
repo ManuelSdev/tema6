@@ -19,3 +19,7 @@ export async function drawListGames() {
       .appendChild(snippetContainer).innerHTML = generateGameSnippet(games[i]);
     }
 }
+
+(async () => {
+  await drawListGames();
+})();

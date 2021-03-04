@@ -35,3 +35,10 @@ export async function drawComments(gameId) {
           .appendChild(document.createElement('li')).innerHTML = generateCommentSnippet(comments[i]);
   }
 }
+
+// https://developer.mozilla.org/es/docs/Web/API/URLSearchParams
+const gameId = parseInt((new URLSearchParams(window.location.search)).get('id'));
+(async () => {
+  await drawGame(gameId);
+  await drawComments(gameId);
+})();
