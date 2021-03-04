@@ -1,3 +1,5 @@
+import './styles.scss';
+
 
 export function generateCommentSnippet(comment) {
   return `<div class="row">
