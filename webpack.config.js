@@ -7,10 +7,10 @@ module.exports = {
     main: './src/index.js',
     detail: './src/detail.js'
   },
-  // output: {
+  output: {
   //   path: path.resolve(__dirname, 'dist'),
-  //   filename: 'main.js'
-  // },
+     filename: '[name].[contenthash].js',
+  },
   module: {
     rules: [{
         test: /\.s[ac]ss$/i,
