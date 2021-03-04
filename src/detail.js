@@ -1,6 +1,7 @@
 import {getGames,getGameById,getCommentsOfGame} from './api-handler.js';
 import {generateCommentSnippet, generateGameSnippet} from './functions.js';
 
+import $ from 'jquery';
 
 
 export async function drawGame(gameId) {
