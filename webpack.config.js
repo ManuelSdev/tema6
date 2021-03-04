@@ -1,4 +1,3 @@
-
 const path = require('path');
 
 
@@ -13,8 +12,7 @@ module.exports = {
   //   filename: 'main.js'
   // },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.s[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
@@ -25,11 +23,18 @@ module.exports = {
           "sass-loader",
         ],
       },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader'
+        }
+      }
     ],
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-  //   compress: true,
-  //   port: 8080,
+    //   compress: true,
+    //   port: 8080,
   },
 };
