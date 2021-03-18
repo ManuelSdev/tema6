@@ -1,4 +1,22 @@
 //TODO: #1 implementar api. Mirar en documentación
+const endpoint = 'http://localhost:3000';
+
+const getGames = async () => {
+  const response = await fetch(`${endpoint}/games`);
+  return response.json();
+}
+
+const getGameById = async (gameId) => {
+  const response = await fetch(`${endpoint}/games/${gameId}`);
+  return response.json();
+}
+
+const getCommentsOfGame = async (gameId) => {
+  const response = await fetch(`${endpoint}/games/${gameId}/comments?_expand=user`);
+  return response.json();
+}
+
+
 async function drawListGames() {
     let games = await getGames();
     document.getElementById('games')
@@ -10,6 +28,8 @@ async function drawListGames() {
             .appendChild(document.createElement('li')).innerHTML = generateGameSnippet(games[i]);
     }
 }
+
+
 
 async function drawGame(gameId) {
   let game = await getGameById(gameId);
