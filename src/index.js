@@ -84,5 +84,12 @@ function generateCommentSnippet(comment) {
 
 // TODO: #4 Dar más información que una lista (imagen, nombre, primeros 100 caracteres de summary)
 function generateGameSnippet(game) {
-  return `<a href="/detail.html?id=${game.id}">${game.name}</a>`;
+  return `<div class="game-snippet">
+  <a href="/detail.html?id=${game.id}">
+    <div class="game-snippet-container">
+      <img class="img-thumbnail" id="game-${game.id}" src="${game.image}" alt="Cover of game ${game.name}" />
+    </div>
+    <h3 class="game-name">${game.name}</h3>
+  </a>
+</div>`;
 }
