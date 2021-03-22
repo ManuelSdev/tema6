@@ -1,23 +1,6 @@
-//TODO: #1 implementar api. Mirar en documentación
-const endpoint = 'http://localhost:3000';
+import{getGames,getGameById,getCommentsOfGame} from './api-handler.js'
 
-const getGames = async () => {
-  const response = await fetch(`${endpoint}/games`);
-  return response.json();
-}
-
-const getGameById = async (gameId) => {
-  const response = await fetch(`${endpoint}/games/${gameId}`);
-  return response.json();
-}
-
-const getCommentsOfGame = async (gameId) => {
-  const response = await fetch(`${endpoint}/games/${gameId}/comments?_expand=user`);
-  return response.json();
-}
-
-
-async function drawListGames() {
+export async function drawListGames() {
   let games = await getGames();
   const newDiv = document.createElement('div');
   newDiv.setAttribute('id', 'games-list');
