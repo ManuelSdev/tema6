@@ -2,8 +2,12 @@
 const path = require('path');
 
 module.exports = {
-    entry: ['./src/index.js', './src/details.js'],
-    mode: 'production',
+    entry: {
+      main: './src/index.js',
+      detail: './src/detail.js'
+    },
+    //mode: 'production',
+    
     //output: {
       //Le decimos que el path sea el mismo
     //  path: path.resolve(__dirname, 'dist'),
