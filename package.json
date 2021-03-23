@@ -5,17 +5,17 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production",
-    "dev": "webpack --mode=development",
-    "devServer": "webpack-dev-server"
+    "build": "webpack --mode=production --output-path ./dist/webpack5-build",
+    "dev": "webpack --mode=development --output-path ./dist/webpack5-dev",
+    "devServer": "webpack serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.32.8",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
