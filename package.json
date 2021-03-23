@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production --output-path ./dist/webpack5-build",
-    "dev": "webpack --mode=development --output-path ./dist/webpack5-dev",
-    "devServer": "webpack serve"
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development",
+    "devServer": "webpack serve --mode=development"
   },
   "keywords": [],
   "author": "",

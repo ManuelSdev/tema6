@@ -33,3 +33,9 @@ export async function drawGame(gameId) {
     }
   }
   
+      // https://developer.mozilla.org/es/docs/Web/API/URLSearchParams
+      const gameId = parseInt((new URLSearchParams(window.location.search)).get('id'));
+      (async () => {
+        await drawGame(gameId);
+        await drawComments(gameId);
+      })();

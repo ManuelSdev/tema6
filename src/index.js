@@ -18,6 +18,8 @@ export async function drawListGames() {
   }
 }
 
-
+(async () => {
+  await drawListGames();
+})();
 
 
