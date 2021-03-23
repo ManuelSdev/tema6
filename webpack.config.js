@@ -10,5 +10,10 @@ module.exports = {
       //Pero con un nombre de archivo distinto: que sea index.js
       filename: 'index.js',
     },
+    devServer: {
+      contentBase: path.join(__dirname, 'dist'),
+      compress: true,
+      port: 9000,
+    },
   };
   
