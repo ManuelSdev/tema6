@@ -1,6 +1,6 @@
 import{getGames,getGameById,getCommentsOfGame} from './api-handler.js'
 import{generateGameSnippet, generateCommentSnippet} from './functions.js'
-
+import $ from 'jquery';
 export async function drawGame(gameId) {
     let game = await getGameById(gameId);
     document.getElementById('game-name-title').innerHTML = game.name;
