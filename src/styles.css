@@ -1,28 +1,17 @@
-ul {
-  list-style-type: none;
-}
-ul#games-list li {
-  display: inline-block;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 2 | @import "~bootstrap/scss/bootstrap";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src\styles.scss 2:9  root stylesheet */
 
-.game-name {
-  color: darkorange;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"~bootstrap/scss/bootstrap\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\styles.scss 2:9  root stylesheet";
 }
-.game-name:hover {
-  color: orange;
-}
-
-.game-snippet {
-  max-width: 220px;
-}
-.game-snippet .game-snippet-container, .game-snippet .game-name {
-  text-align: center;
-}
-.game-snippet .game-name {
-  max-width: 220px;
-  display: -webkit-box;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-/*# sourceMappingURL=styles.css.map */
